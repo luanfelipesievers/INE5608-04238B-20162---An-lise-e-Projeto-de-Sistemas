@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MovieComander-administrativo" />
+        <module name="MovieComander-cliente" />
+        <module name="MovieComander-funcionario" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="MovieComander-administrativo" target="1.7" />
+      <module name="MovieComander-cliente" target="1.7" />
+      <module name="MovieComander-funcionario" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

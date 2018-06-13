@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="br.com.moviecomander.administrativo.controller.LoginAdministrativoFXMLController">
+    <children>
+        <Label layoutX="329.0" layoutY="71.0" styleClass="header" text="Login Administrativo">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="inputUsuario" layoutX="357.0" layoutY="252.0" prefHeight="35.0" prefWidth="314.0" promptText="Usuario" />
+        <PasswordField fx:id="inputSenha" layoutX="355.0" layoutY="303.0" prefHeight="35.0" prefWidth="314.0"
+                       promptText="Senha"/>
+        <Button fx:id="btnLogin" layoutX="405.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleButtonLogin"
+                text="Login"/>
+        <Button layoutX="535.0" layoutY="528.0" mnemonicParsing="false" onAction="#handleButtonFechar" text="Fechar"/>
+        <Text fx:id="erro" fill="RED" layoutX="384.0" layoutY="200.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    </children>
+</AnchorPane>

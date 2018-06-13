@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Label layoutX="321.0" layoutY="68.0" styleClass="header" text="Registrar Funcionario">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="erro" fill="RED" layoutY="135.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="1024.0"/>
+        <ChoiceBox fx:id="inputFuncionario" layoutX="362.0" layoutY="282.0" prefHeight="27.0" prefWidth="300.0"
+                   value="inputFuncionario.nome"/>
+        <Button fx:id="btnRegistrar" layoutX="459.0" layoutY="585.0" mnemonicParsing="false"
+                onAction="#handleButtonRegistrar" text="Registrar"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="MovieComander">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>br.com.moviecomander.funcionario.entity.Filme</class>
+    <class>br.com.moviecomander.funcionario.entity.Cliente</class>
+    <class>br.com.moviecomander.funcionario.entity.Filme</class>
+    <class>br.com.moviecomander.funcionario.entity.Funcionario</class>
+    <class>br.com.moviecomander.funcionario.entity.Administrador</class>
+    <class>br.com.moviecomander.funcionario.entity.Reserva</class>
+    <class>br.com.moviecomander.funcionario.entity.Sessao</class>
+    <class>br.com.moviecomander.funcionario.entity.Ticket</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/moviecomander?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>

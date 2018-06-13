@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Label layoutX="469.0" layoutY="60.0" styleClass="header" text="Reserva">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="erro" fill="RED" layoutY="135.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="1024.0"/>
+
+        <Pane layoutX="219.0" layoutY="138.0" prefHeight="403.0" prefWidth="671.0" style="-fx-border-color: black;">
+            <children>
+                <Text layoutX="78.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código:"/>
+                <Text layoutX="84.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filme:"/>
+                <Text layoutX="88.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:"/>
+                <Text layoutX="78.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário:"/>
+                <Text layoutX="87.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sala:"/>
+                <Text layoutX="84.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor:"/>
+                <TextField fx:id="textCodigo" disable="true" layoutX="136.0" layoutY="61.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+                <TextField fx:id="textFilme" disable="true" layoutX="136.0" layoutY="100.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+                <TextField fx:id="textData" disable="true" layoutX="136.0" layoutY="144.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+                <TextField fx:id="textHorario" disable="true" layoutX="136.0" layoutY="186.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+                <TextField fx:id="textSala" disable="true" layoutX="136.0" layoutY="235.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+                <TextField fx:id="textValor" disable="true" layoutX="136.0" layoutY="281.0" prefHeight="25.0"
+                           prefWidth="412.0"/>
+            </children>
+        </Pane>
+        <Button layoutX="609.0" layoutY="620.0" mnemonicParsing="false" onAction="#handleButtonCancelar"
+                text="Cancelar"/>
+        <Button fx:id="btnImprimir" layoutX="378.0" layoutY="620.0" mnemonicParsing="false"
+                onAction="#handleButtonImprimir" text="Imprimir"/>
+    </children>
+</AnchorPane>

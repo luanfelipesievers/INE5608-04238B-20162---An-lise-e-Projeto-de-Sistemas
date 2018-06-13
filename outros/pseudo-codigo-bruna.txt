@@ -1,0 +1,37 @@
+Funcionário
+	Controller
+		*****
+		inputs: 
+			1 tela) cpf, codigo
+			2 tela) fieldReserva
+			3 tela) choiceFuncionarios
+			
+		Global:
+			Reserva
+		*****
+		handleButtonBuscar()
+				reserva = validarTodosCamposPreenchidos()
+				if(reserva){
+					 reserva = buscarDadosReserva()*****
+						if(reserva != null){
+							exibirViewDadosReserva(reserva.toString())*** mostrar update da view
+						}else{
+							mostrarMsg(..)
+						}
+				}else{
+					mostrarMsg(..)
+				}
+		
+		
+		handleButtonImprimir()
+				List<Funcionario> funcionario = buscarFuncionariosAtivos()
+				exibirViewRetiradaFuncionario()*** mostrar update da view + popular combo ( pedir ao luan Print)
+				
+		handleButtonRegistrar()
+				reserva.ticket.setFuncionario(choiceFuncionarios)
+				atualizarTicket(reserva.ticket)*** mostrar dao
+					DAO.update(reserva)
+				reserva.setRetirado(true)
+				atualizarReserva(reserva)**mostrar dao
+		
+		

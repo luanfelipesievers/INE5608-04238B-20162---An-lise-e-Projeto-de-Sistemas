@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Label layoutX="231.0" layoutY="97.0" styleClass="header" text="Reserva efetuada com sucesso!">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="erro" fill="RED" layoutY="156.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="1024.0"/>
+        <Button fx:id="btnImprimir" layoutX="461.0" layoutY="547.0" mnemonicParsing="false"
+                onAction="#handleButtonImprimir" text="Imprimir"/>
+        <Label layoutX="291.0" layoutY="159.0" styleClass="header" text="Seu código de reserva é:">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="textCodigoReserva" layoutX="237.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="550.13671875">
+            <font>
+                <Font size="38.0"/>
+            </font>
+        </Text>
+
+
+    </children>
+</AnchorPane>

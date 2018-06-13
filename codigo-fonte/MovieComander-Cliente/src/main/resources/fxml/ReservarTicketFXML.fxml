@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="br.com.moviecomander.cliente.controller.ReservarTicketFXMLController">
+    <children>
+        <Label layoutX="190.0" layoutY="81.0" styleClass="header" text="Por favor, insira seu número de CPF">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="erro" fill="RED" layoutY="156.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="1024.0"/>
+
+        <Label layoutX="333.0" layoutY="266.0" styleClass="item-title" text="CPF" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x11"/>
+            </font>
+        </Label>
+        <TextField fx:id="inputCPF" layoutX="378.0" layoutY="256.0" prefHeight="35.0" prefWidth="314.0"
+                   promptText="Digite o CPF"/>
+        <Button fx:id="btnBuscar" layoutX="378.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonOk"
+                text="Ok"/>
+        <Button layoutX="565.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonCancelar"
+                text="Cancelar"/>
+
+
+    </children>
+</AnchorPane>

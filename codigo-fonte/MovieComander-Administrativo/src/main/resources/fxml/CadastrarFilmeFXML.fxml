@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="br.com.moviecomander.administrativo.controller.CadastrarFilmeFXMLController">
+    <children>
+        <Label layoutX="353.0" layoutY="46.0" styleClass="header" text="Cadastro de Filme">
+            <font>
+                <Font name="Segoe UI" size="30.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="318.0" layoutY="210.0" prefHeight="25.0" prefWidth="23.0" styleClass="item-title" text="Ano" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x112" />
+            </font>
+        </Label>
+        <Label layoutX="312.0" layoutY="157.0" prefHeight="25.0" prefWidth="33.0" styleClass="item-title" text="Nome" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x11" />
+            </font>
+        </Label>
+        <Label layoutX="303.0" layoutY="265.0" prefHeight="25.0" prefWidth="45.0" styleClass="item-title" text="Duração" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x111" />
+            </font>
+        </Label>
+        <Label layoutX="310.0" layoutY="329.0" prefHeight="25.0" prefWidth="39.0" styleClass="item-title" text="Genêro" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x1111" />
+            </font>
+        </Label>
+        <Label layoutX="279.0" layoutY="393.0" prefHeight="25.0" prefWidth="67.0" styleClass="item-title" text="Classificação" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x11111" />
+            </font>
+        </Label>
+        <Label layoutX="308.0" layoutY="458.0" prefHeight="131.0" prefWidth="42.0" styleClass="item-title" text="Sinópse" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI" size="12.0" fx:id="x111111" />
+            </font>
+        </Label>
+        <TextField fx:id="inputNome" layoutX="357.0" layoutY="152.0" prefHeight="35.0" prefWidth="314.0" promptText="Digite o nome do filme" />
+        <TextField fx:id="inputAno" layoutX="358.0" layoutY="205.0" prefHeight="35.0" prefWidth="314.0" promptText="Digite o ano do filme" />
+        <TextField fx:id="inputDuracao" layoutX="357.0" layoutY="260.0" prefHeight="35.0" prefWidth="314.0" promptText="Digite a duração em minutos" />
+        <TextField fx:id="inputGenero" layoutX="357.0" layoutY="324.0" prefHeight="35.0" prefWidth="314.0" promptText="Digite o(s) gênero(s) do filme" />
+        <ChoiceBox fx:id="inputClassificacao" layoutX="357.0" layoutY="387.0" prefHeight="37.0" prefWidth="314.0" />
+        <TextArea fx:id="inputSinopse" layoutX="357.0" layoutY="433.0" prefHeight="180.0" prefWidth="314.0"
+                  promptText="Escreva a sinópse aqui"/>
+        <Button layoutX="357.0" layoutY="657.0" mnemonicParsing="false" onAction="#handleButtonCadastrar" text="Cadastrar" />
+        <Button layoutX="567.0" layoutY="657.0" mnemonicParsing="false" onAction="#handleButtonCancelar" text="Cancelar" />
+        <Text fx:id="erro" fill="RED" layoutX="384.0" layoutY="115.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+
+    </children>
+</AnchorPane>

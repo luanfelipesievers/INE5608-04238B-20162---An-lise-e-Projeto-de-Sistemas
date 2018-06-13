@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="br.com.moviecomander.administrativo.controller.MenuInicialAdministrativoFXMLController">
+    <children>
+        <Label layoutX="267.0" layoutY="63.0" styleClass="header" text="Menu Inicial Administrativo">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btnCadastrarFilme" layoutX="538.0" layoutY="276.0" mnemonicParsing="false"
+                onAction="#handleButtonCadastrarFilme" text="Cadastrar Filme"/>
+        <Button fx:id="btnCadastrarSessao" layoutX="338.0" layoutY="276.0" mnemonicParsing="false"
+                onAction="#handleButtonCadastrarSessao" text="Cadastrar Sessao"/>
+        <Button layoutX="367.0" layoutY="611.0" mnemonicParsing="false" onAction="#handleButtonLogout" text="Logout"/>
+        <Button layoutX="538.0" layoutY="611.0" mnemonicParsing="false" onAction="#handleButtonFechar" text="Fechar"/>
+        <Text fx:id="erro" fill="RED" layoutX="384.0" layoutY="130.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="1024.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet JMetroDarkTheme.css?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" maxHeight="768.0" maxWidth="1024.0" minHeight="768.0"
+            minWidth="1024.0" prefHeight="768.0" prefWidth="1024.0" styleClass="background"
+            stylesheets="@../styles/JMetroLightTheme.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+            xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Label layoutX="259.0" layoutY="81.0" styleClass="header" text="Selecione o tipo de entrada:">
+            <font>
+                <Font name="Segoe UI" size="30.0"/>
+            </font>
+        </Label>
+        <Text fx:id="erro" fill="RED" layoutY="156.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0"
+              textAlignment="CENTER" wrappingWidth="1024.0"/>
+        <Button fx:id="btnSelecionar" layoutX="378.0" layoutY="552.0" mnemonicParsing="false"
+                onAction="#handleButtonSelecionarTipoEntrada" text="Selecionar"/>
+        <Button layoutX="565.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleButtonCancelar"
+                text="Cancelar"/>
+        <RadioButton layoutX="446.0" layoutY="313.0" mnemonicParsing="false" text="Inteira - R$ 20,00"
+                     fx:id="radioButtonInteira">
+            <toggleGroup>
+                <ToggleGroup fx:id="tipoEntrada"/>
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton layoutX="446.0" layoutY="372.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="144.0"
+                     text="Meia - R$ 10,00" toggleGroup="$tipoEntrada" fx:id="radioButtonMeia"/>
+
+
+    </children>
+</AnchorPane>
