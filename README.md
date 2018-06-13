@@ -5,7 +5,7 @@ Professora: Fabiane Barreto Vavassori Benitti
 Trabalho foi feito ao longo da disciplina
 ## Primeira Entrega
 
-> Primeira Entrega: [Sistema de Cinema_0.0.13.eap](aaa)
+> Primeira Entrega: [Sistema de Cinema_0.0.13.eap](https://github.com/luanfelipesievers/INE5608-04238B-20162-APS/blob/master/eap/Sistema%20de%20Cinema_0.0.13.eap)
 
 |*Critério de pontuação*||*Nota máxima*|
 |--|--|--|
@@ -30,7 +30,7 @@ Trabalho foi feito ao longo da disciplina
 
 ## Segunda Entrega
 
-> Segunda Entrega: [Sistema de Cinema_0.0.19.eap](aaa)
+> Segunda Entrega: [Sistema de Cinema_0.0.19.eap](https://github.com/luanfelipesievers/INE5608-04238B-20162-APS/blob/master/eap/Sistema%20de%20Cinema_0.0.19.eap)
 
 |*Critério de pontuação*|*Nota máxima*|
 |--|--|
@@ -43,7 +43,7 @@ Trabalho foi feito ao longo da disciplina
 
 ## Terceira Entrega
 
-> Terceira Entrega: [Sistema de Cinema_0.0.33.eap](aaa)
+> Terceira Entrega: [Sistema de Cinema_0.0.33.eap](https://github.com/luanfelipesievers/INE5608-04238B-20162-APS/blob/master/eap/Sistema%20de%20Cinema_0.0.33.eap)
 
 |*Critério de pontuação*||*Nota máxima*|
 |--|--|--|
@@ -58,7 +58,7 @@ Trabalho foi feito ao longo da disciplina
 
 ## Quarta Entrega
 
-> Terceira Entrega: [Sistema de Cinema_0.0.36.eap](aaa) + Código Fonte
+> Terceira Entrega: [Sistema de Cinema_0.0.36.eap](https://github.com/luanfelipesievers/INE5608-04238B-20162-APS/blob/master/eap/Sistema%20de%20Cinema_0.0.36.eap) + Código Fonte
 
 Postar nesta atividade o .eap com o projeto completo para avaliação.
 Não é necessário postar o .jar, caso a implementação não esteja completa.
